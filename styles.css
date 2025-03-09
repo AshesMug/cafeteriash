@@ -35,30 +35,50 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Menú enlaces con dos contornos: negro y cyan */
 nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    text-shadow: 
+        2px 2px 0px black, /* Contorno negro */
+        -2px -2px 0px black, 
+        2px -2px 0px black,
+        -2px 2px 0px black, 
+        0 0 8px #00ecff, /* Contorno cian (ilusión de brillo) */
+        0 0 15px #00ecff,
+        0 0 20px #00ecff;
 }
 
 nav ul li a:hover {
     color: #00ecff;
+    text-shadow: 
+        2px 2px 0px black, 
+        -2px -2px 0px black, 
+        2px -2px 0px black,
+        -2px 2px 0px black, 
+        0 0 10px #00ecff, /* Un poco más de brillo al pasar el mouse */
+        0 0 18px #00ecff,
+        0 0 25px #00ecff;
 }
 
 /* Sección de bienvenida y presentación */
 main {
-    background-color: #8a5060; /* Fondo rojo oscuro */
+    background-color: #8a5060;
     padding: 20px;
     text-align: center;
 }
 
 main h2 {
-    color: #00ecff; /* Títulos cyan */
+    color: #00ecff;
 }
 
 main p {
-    color: white; /* Texto blanco */
+    color: white;
 }
 
 /* Pie de página */
@@ -73,7 +93,7 @@ footer {
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     nav ul li {
-        display: block; /* Los enlaces del menú se apilarán verticalmente */
+        display: block;
         margin-right: 0;
         margin-bottom: 10px;
     }
@@ -86,4 +106,3 @@ footer {
         padding: 15px;
     }
 }
-
