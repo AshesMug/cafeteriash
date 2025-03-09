@@ -1,0 +1,65 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0056; /* Fondo rojizo */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #00ecff; /* Fondo cyan */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #00ecff; /* Borde decorativo cyan */
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #ff0056; /* Fondo rojizo */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #00ecff; /* Color de texto cyan */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white; /* Cambio de color al pasar el mouse */
+}
+
+/* Secciones principales */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #00ecff; /* Títulos cyan */
+}
+
+/* Pie de página */
+footer {
+    background-color: #00ecff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
