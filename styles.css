@@ -1,7 +1,7 @@
 /* Estilo general de la página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #ff0056; /* Fondo principal rojizo */
+    background-color: #ff0056;
     color: white;
     margin: 0;
     padding: 0;
@@ -9,17 +9,17 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #00ecff; /* Fondo cyan */
+    background-color: #00ecff;
     color: white;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #00ecff; /* Borde decorativo cyan */
+    border-bottom: 5px solid #00ecff;
 }
 
 /* Menú de navegación */
 nav {
-    background-color: transparent; /* Sin fondo colorido */
-    border: 2px solid #00ecff; /* Bordes cyan */
+    background-color: transparent;
+    border: 2px solid #00ecff;
     text-align: center;
     padding: 10px 0;
 }
@@ -36,14 +36,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black; /* Texto negro */
+    color: black;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #00ecff; /* Cambio de color al pasar el mouse */
+    color: #00ecff;
 }
 
 /* Sección de bienvenida y presentación */
@@ -68,5 +68,22 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Los enlaces del menú se apilarán verticalmente */
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
 }
 
