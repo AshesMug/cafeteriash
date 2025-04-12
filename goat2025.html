@@ -34,21 +34,33 @@
     <section class="best">
       <h2>The best of 2025!</h2>
       <div class="gallery">
-        <div class="box"><p class="caption">Título uno</p></div>
-        <div class="box"><p class="caption">Título dos</p></div>
-        <div class="box"><p class="caption">Título tres</p></div>
-        <div class="box"><p class="caption">Título cuatro</p></div>
-        <div class="box"><p class="caption">Título cinco</p></div>
-      </div>
+  <div class="box" style="background-image: url('https://i.imgur.com/aaGOE1R.png');">
+    <p class="caption">Título uno</p>
+  </div>
+  <div class="box" style="background-image: url('https://i.imgur.com/aaGOE1R.png');">
+    <p class="caption">Título dos</p>
+  </div>
+  <div class="box" style="background-image: url('https://i.imgur.com/aaGOE1R.png');">
+    <p class="caption">Título tres</p>
+  </div>
+  <div class="box" style="background-image: url('https://i.imgur.com/aaGOE1R.png');">
+    <p class="caption">Título cuatro</p>
+  </div>
+  <div class="box" style="background-image: url('https://i.imgur.com/aaGOE1R.png');">
+    <p class="caption">Título cinco</p>
+  </div>
+</div>
+
     </section>
 
     <section class="more">
       <h2>More of 2025</h2>
       <div class="grid">
-        <!-- 8 x 8 = 64 cuadritos -->
-        <!-- Usamos JavaScript o JSON luego para rellenarlos -->
-        <!-- Por ahora solo estructuras vacías -->
-        <!-- Puedes duplicar esto con JS después -->
+  ${Array.from({length: 64}).map((_, i) => `
+    <div class="mini-box" style="${i < 22 ? "background-image: url('https://i.imgur.com/aaGOE1R.png'); background-size: cover; background-position: center;" : ""}"></div>
+  `).join('')}
+</div>
+
         ${'<div class="mini-box"></div>'.repeat(64)}
       </div>
     </section>
