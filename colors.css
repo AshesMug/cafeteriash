@@ -1,0 +1,14 @@
+:root {
+  /* Colores base */
+  --color-background: #111111;
+  --color-rosa-rojo: #ff006d;
+  --color-cian: #00ffff;
+
+  /* Texto */
+  --text-primary: var(--color-rosa-rojo);
+  --text-highlight: var(--color-cian);
+
+  /* Bordes y líneas */
+  --border-color: var(--color-rosa-rojo);
+  --link-color: var(--color-cian);
+}
