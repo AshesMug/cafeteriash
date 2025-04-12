@@ -1,6 +1,6 @@
 body {
   background-color: #111;
-  color: #f0f;
+  color: #ff006d;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,13 +8,13 @@ body {
 }
 
 h1 {
-  color: #f0f;
+  color: #ff006d;
   font-size: 2.5rem;
   margin: 1rem 0;
 }
 
 h1 .highlight {
-  color: #0ff;
+  color: #00ffff;
 }
 
 nav ul {
@@ -23,14 +23,26 @@ nav ul {
   margin: 1rem 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -0.6rem;
+  color: #ff006d;
 }
 
 nav a {
   text-decoration: none;
-  color: #0ff;
+  color: #00ffff;
   font-weight: bold;
+  padding: 0 0.5rem;
 }
 
 .block {
@@ -39,20 +51,20 @@ nav a {
 
 h2 {
   font-size: 2rem;
-  color: #f0f;
+  color: #ff006d;
 }
 
 p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1rem;
-  color: #f0f;
+  color: #ff006d;
 }
 
 .see-more {
   display: inline-block;
   margin-top: 1rem;
-  color: #0ff;
+  color: #00ffff;
   text-decoration: underline;
 }
 
@@ -70,12 +82,12 @@ p {
 .box {
   width: 100px;
   height: 150px;
-  border: 2px solid #f0f;
+  border: 2px solid #ff006d;
   transform: skew(-10deg);
 }
 
 .note {
   font-size: 0.8rem;
-  color: #f55;
+  color: #ff006d;
   margin-top: 1rem;
 }
